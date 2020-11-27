@@ -5,7 +5,7 @@
     <title>Paris Bouge</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One">
@@ -21,7 +21,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            <button id="btnPWA" class="btn btn-info btn-pwa">Ajouter à l'écran d'accueil ?</button>
             <div class="collapse navbar-collapse" id="main-menu">
                 <ul class="navbar-nav w-100">
                     <li class="nav-item">
@@ -42,6 +42,7 @@
     </nav><!-- .navbar -->
 
     <main class="container"></main>
+    
     <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>

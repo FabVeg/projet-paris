@@ -34,3 +34,12 @@ i {
 .nav-item .img-thumbnail {
     max-width: 50px;
 }
+
+.btn-pwa {
+    display: none;
+    transform-origin: 0 50%;
+}
+.btn-pwa.appear {
+    display: block;
+    animation: appear 750ms forwards;
+}
