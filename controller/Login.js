@@ -33,6 +33,20 @@ export default class Login
             });
         });
 
+        document.getElementById('btn-github').addEventListener("click", ()=>{ 
+            let provider = new firebase.auth.GithubAuthProvider()
+
+            firebase.auth().signInWithPopup(provider).then((user) => {   
+                // vous pouvez récupérer le nom comme ceci :             
+                alert(user.additionalUserInfo.profile.name || user.additionalUserInfo.profile.login)
+            }).catch(function(error) {
+                console.log(error)
+            }) 
+    
+          
+            });
+        
+
     }
   
 
