@@ -1,0 +1,48 @@
+<h1>Évènements à Paris</h1>
+
+<form class="form">
+    <div class="form">
+      <label for="name">Terme de recherche : </label>
+      <input type="text" name="name" id="name">
+    </div>
+    <div class="form">
+      <label for="year">Année des évènements :</label>
+        <select name="year" id="year">
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+        </select>
+    </div>
+    <div class="form">  
+        <label for="date">Trier par date :</label>
+        <select name="date" id="date">
+            <option value="date_start">Date(croissant)</option>
+            <option value="-date_start">Date(croissant)</option>
+            <option value="title">Titre</option>
+        </select>
+    </div>
+    </div>
+    <div class="form">
+      <input type="submit" value="Rechercher!" class='search'>
+    </div>
+  </form>
+
+  <template id="productrow">
+    <div class="col">
+      <h6 class="event-title"></h6>
+      <img src="" class='event-image'>
+    </div>
+  </template>  
+
+ <div class="event-list row">
+ </div>
